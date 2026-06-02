@@ -1,13 +1,25 @@
 const glow = document.querySelector(".cursor-glow");
-const hasFinePointer = window.matchMedia("(pointer: fine)").matches;
+const finePointerQuery = window.matchMedia("(pointer: fine)");
 
-if (glow && hasFinePointer) {
+const applyPointerMode = () => {
+  if (!glow) return;
+  glow.style.display = finePointerQuery.matches ? "" : "none";
+};
+
+applyPointerMode();
+
+if (finePointerQuery.addEventListener) {
+  finePointerQuery.addEventListener("change", applyPointerMode);
+} else if (finePointerQuery.addListener) {
+  finePointerQuery.addListener(applyPointerMode);
+}
+
+if (glow) {
   window.addEventListener("mousemove", (e) => {
+    if (!finePointerQuery.matches) return;
     glow.style.left = e.clientX + "px";
     glow.style.top = e.clientY + "px";
   });
-} else if (glow) {
-  glow.style.display = "none";
 }
 
 const revealElements = document.querySelectorAll(".reveal");
@@ -26,12 +38,11 @@ if ("IntersectionObserver" in window) {
   revealElements.forEach(el => el.classList.add("show"));
 }
 
-if (hasFinePointer) {
-  document.querySelectorAll(".project-card, .skill-card, .timeline-item").forEach(card => {
-    card.addEventListener("mousemove", (e) => {
-      const rect = card.getBoundingClientRect();
-      card.style.setProperty("--x", `${e.clientX - rect.left}px`);
-      card.style.setProperty("--y", `${e.clientY - rect.top}px`);
-    });
+document.querySelectorAll(".project-card, .skill-card, .timeline-item").forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    if (!finePointerQuery.matches) return;
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    card.style.setProperty("--y", `${e.clientY - rect.top}px`);
   });
-}
+});
