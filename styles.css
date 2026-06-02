@@ -12,6 +12,10 @@
   --cyan:#58e4ff;
   --purple:#8b5cff;
   --shadow:0 30px 90px rgba(0,0,0,.45);
+  --viewport-min:320px;
+  --project-title-min:22px;
+  --project-title-fluid:3vw;
+  --project-title-max:26px;
 }
 
 *{box-sizing:border-box}
@@ -26,7 +30,7 @@ body{
     var(--bg);
   color:var(--text);
   overflow-x:hidden;
-  min-width:320px;
+  min-width:var(--viewport-min);
 }
 
 body::before{
@@ -344,7 +348,7 @@ h1 span{
 .project-top span{color:var(--blue2);font-weight:900}
 .project-content h3{
   margin:16px 0 10px;
-  font-size:clamp(22px,3vw,26px);
+  font-size:clamp(var(--project-title-min),var(--project-title-fluid),var(--project-title-max));
   letter-spacing:-.035em;
 }
 .project-content p{
