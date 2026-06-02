@@ -26,6 +26,7 @@ body{
     var(--bg);
   color:var(--text);
   overflow-x:hidden;
+  min-width:320px;
 }
 
 body::before{
@@ -79,8 +80,22 @@ img{display:block;max-width:100%}
 }
 .logo span{color:var(--blue)}
 
-nav{display:flex;gap:24px;color:var(--muted);font-size:14px;font-weight:700}
-nav a{position:relative}
+nav{
+  display:flex;
+  gap:24px;
+  color:var(--muted);
+  font-size:14px;
+  font-weight:700;
+  align-items:center;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+nav::-webkit-scrollbar{display:none}
+nav a{
+  position:relative;
+  white-space:nowrap;
+  flex:0 0 auto;
+}
 nav a::after{
   content:"";
   position:absolute;
@@ -329,7 +344,7 @@ h1 span{
 .project-top span{color:var(--blue2);font-weight:900}
 .project-content h3{
   margin:16px 0 10px;
-  font-size:26px;
+  font-size:clamp(22px,3vw,26px);
   letter-spacing:-.035em;
 }
 .project-content p{
@@ -421,6 +436,13 @@ h1 span{
 .contact-grid strong{display:block;color:#fff;margin-bottom:6px}
 .contact-grid span{color:var(--muted);font-size:14px}
 
+.project-content p,
+.timeline-item p,
+.skill-card p,
+.contact-grid span{
+  overflow-wrap:anywhere;
+}
+
 footer{
   width:min(1180px,calc(100% - 32px));
   margin:50px auto 28px;
@@ -443,7 +465,20 @@ footer{
 }
 
 @media(max-width:930px){
-  nav{display:none}
+  .header{
+    top:10px;
+    width:min(1180px,calc(100% - 20px));
+    margin-top:10px;
+    padding:10px 12px;
+    gap:10px;
+  }
+  .logo{font-size:17px;flex-shrink:0}
+  nav{
+    gap:12px;
+    font-size:13px;
+    flex:1;
+  }
+  .header-btn{display:none}
   .hero,.project-grid,.two-cols,.skill-grid,.contact,.contact-grid{
     grid-template-columns:1fr;
   }
@@ -454,9 +489,27 @@ footer{
   footer{flex-direction:column}
 }
 
+@media(max-width:700px){
+  .hero-copy,.hero-panel,.contact{padding:24px}
+  .project-content,.skill-card{padding:20px}
+  .timeline-item{padding:20px 18px 20px 44px}
+  .line-dot{left:18px;top:24px}
+  .actions .btn{width:100%}
+}
+
 @media(max-width:520px){
-  .header-btn{display:none}
+  nav{font-size:12px;gap:10px}
+  nav a::after{bottom:-6px}
   .section{margin-top:64px}
   h1{font-size:48px}
   .hero{min-height:auto}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .project-card,.reveal{transition:none}
+  .reveal{
+    opacity:1;
+    transform:none;
+  }
 }
