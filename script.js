@@ -8,11 +8,7 @@ const applyPointerMode = () => {
 
 applyPointerMode();
 
-if (finePointerQuery.addEventListener) {
-  finePointerQuery.addEventListener("change", applyPointerMode);
-} else if (finePointerQuery.addListener) {
-  finePointerQuery.addListener(applyPointerMode);
-}
+finePointerQuery.addEventListener?.("change", applyPointerMode);
 
 if (glow) {
   window.addEventListener("mousemove", (e) => {
@@ -24,7 +20,7 @@ if (glow) {
 
 const revealElements = document.querySelectorAll(".reveal");
 
-if ("IntersectionObserver" in window) {
+if (typeof IntersectionObserver !== "undefined") {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
