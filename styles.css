@@ -467,7 +467,6 @@ footer{
   .header{
     top:10px;
     width:min(1180px,calc(100% - 20px));
-    margin-top:10px;
     padding:10px 12px;
     gap:10px;
   }
