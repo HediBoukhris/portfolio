@@ -1,11 +1,22 @@
 # Portfolio — Mohamed Hedi Boukhris
 
-Portfolio personnel en HTML/CSS/JS.
+Portfolio personnel premium en HTML/CSS/JS.
 
-## Mise en ligne avec GitHub Pages
+## Contenu inclus
+- Nom : Mohamed Hedi Boukhris
+- Projet ZOMI avec lien : https://yosritto.github.io/site-Zomi/
+- AI AD Awards Top 5
+- Hackathon Python — Dauphine Tunis
+- Stages : Tunisys et Digital Virgo
+- Bac français 2025, spécialités Mathématiques et NSI
+- Nouvelle photo
 
-Dans le repo GitHub :
-Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: /root → Save
+## Mise en ligne GitHub Pages
+1. Upload `index.html`, `styles.css`, `script.js` et le dossier `assets` dans le repo GitHub.
+2. Va dans Settings > Pages.
+3. Source : Deploy from a branch.
+4. Branch : main, folder : /root.
+5. Save.
 
-Le site sera disponible ici :
+Lien attendu :
 https://hediboukhris.github.io/portfolio/

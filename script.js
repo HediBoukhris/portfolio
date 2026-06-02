@@ -1,7 +1,23 @@
-document.querySelectorAll('.card,.skillBox,.item,.heroCard').forEach(el=>{
-  el.addEventListener('mousemove', e=>{
-    const r=el.getBoundingClientRect();
-    el.style.background=`radial-gradient(circle at ${e.clientX-r.left}px ${e.clientY-r.top}px, rgba(47,124,255,.18), rgba(10,18,38,.78) 45%, rgba(5,8,22,.76))`;
+const glow = document.querySelector(".cursor-glow");
+window.addEventListener("mousemove", (e) => {
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
   });
-  el.addEventListener('mouseleave',()=>el.style.background='');
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+document.querySelectorAll(".project-card, .skill-card, .timeline-item").forEach(card => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  });
 });

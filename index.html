@@ -4,161 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed Hedi Boukhris — Portfolio</title>
-  <meta name="description" content="Portfolio de Mohamed Hedi Boukhris, étudiant en ingénierie informatique à ESPRIT, développeur junior C/Python, Game Dev et IA." />
+  <meta name="description" content="Portfolio de Mohamed Hedi Boukhris, étudiant en ingénierie informatique à ESPRIT, développeur C/Python, Game Dev et IA." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="cursor-glow"></div>
+  <div class="bg-grid"></div>
+
   <header class="header">
-    <a href="#top" class="logo">&lt;MHB /&gt;</a>
+    <a href="#top" class="logo"><span>&lt;</span>MHB<span>/&gt;</span></a>
     <nav>
       <a href="#projects">Projets</a>
       <a href="#journey">Parcours</a>
       <a href="#skills">Compétences</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="header-btn" href="https://yosritto.github.io/site-Zomi/" target="_blank" rel="noreferrer">Site ZOMI</a>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="heroText">
-        <p class="badge">Développeur • Game Dev • IA</p>
-        <h1>Mohamed Hedi<br/>Boukhris</h1>
-        <p class="subtitle">Étudiant en ingénierie informatique • Développement logiciel • Game Development</p>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Développeur junior • Game Dev • IA</p>
+        <h1>Mohamed Hedi<br><span>Boukhris</span></h1>
+        <p class="subtitle">Étudiant en ingénierie informatique à ESPRIT, orienté développement logiciel, projets interactifs et jeux vidéo.</p>
         <p class="intro">
-          Étudiant à ESPRIT, passionné par le développement logiciel, le game development et l'intelligence artificielle.
-          Mon projet de jeu vidéo <strong>ZOMI</strong> a remporté la <strong>1ère place « Meilleur Jeu » au GD3 2026</strong>.
+          Passionné par la programmation, le game development et l’intelligence artificielle. J’ai travaillé sur
+          <strong>ZOMI</strong>, un jeu 2D en C/SDL2 récompensé <strong>1ère place « Meilleur Jeu » au GD3 2026</strong>,
+          et participé à des hackathons, dont <strong>AI AD Awards Top 5</strong>.
         </p>
+
         <div class="actions">
           <a class="btn primary" href="#projects">Voir mes projets</a>
-          <a class="btn" href="mailto:hediboukhris821@gmail.com">Me contacter</a>
+          <a class="btn ghost" href="https://yosritto.github.io/site-Zomi/" target="_blank" rel="noreferrer">Découvrir ZOMI</a>
+          <a class="btn ghost" href="mailto:hediboukhris821@gmail.com">Me contacter</a>
         </div>
-        <div class="stats">
-          <div><span>1ère place</span><small>GD3 2026</small></div>
-          <div><span>Top 5</span><small>AI AD Awards</small></div>
-          <div><span>2 stages</span><small>Digital Virgo & Tunisys</small></div>
+
+        <div class="metrics">
+          <div><strong>1ère</strong><span>place GD3 2026</span></div>
+          <div><strong>Top 5</strong><span>AI AD Awards</span></div>
+          <div><strong>2</strong><span>stages</span></div>
         </div>
       </div>
 
-      <div class="heroCard">
-        <div class="photo"><img src="data:image/webp;base64,UklGRs4jAABXRUJQVlA4IMIjAAAQzgCdASqkAaQBPmEwlUckIyIhI5UJ2IAMCWlu4XAOCJbU63gaoYJ63fbIbYTFrzK2/3M8BR/244T9VpmgP+o/WH8Dn7H6ifTTHEsWKUDTnlHK87u7u7u7u7u7u7u7u7u7u7u7wC06KLV6Shvyjk4uQKUDTnlHK87u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u5526zqmkJFTFKKOV53d3d3d3dOkfl1obFf8VIqpwAJMfgpMBP7W/NPmZaOSpi1Z937+rDDQndUPv7IFnPFD/wpQNOeUckweyITZKQwzen3jJX0mfkgF3hnlBtYFA77YDKD9TTjLGlQsy0TsPyFEHhUpTCell6d1ie0JDNUObM5GQQ6O7u7vALTooNAmhm47FcMFqgZ8/TcpbPHUbz5lD062OSfY1m3AqFjCT53vEmNzwedV/mB3YQah3/aaxB8gt1MziYgAN7p11YAwFQvBvWEsWKUC8PJ7+0bKRWqjMagvb6jH2U8bnqd+M5ZV6DNuHsf0exqN73HRVED4kgiKvmvUc156k23Pj64ixtbPwvNUq2pFiUajWqIhEE0LYpQNOeUcjLK2STda2FzVntJbsN1Tq8jh4FPTqiT4aWOUKPvSPZd12hMGtxwuvLIxDu0xugEiKaWtNCJbZObb9AQS6R0jS7A5WRzddUsyLaPWrUcK7aa0knRRRTEQvju+WIyOuahXHqWr46CpszDiuDcgIAJMifNbh3oOCC6U4qX1fh6Oi5buEbXpJyXtqSa2PIFy4468lN6gyIGQeDzhegtLS6a0knRRRt/TTee2jiUojsx90UzRKW5aw0naEi2IWV0SfUoKMI1GjYt5zpXY8oYp462Uuvbpu2RQG0JfUpZvJXSQwI7p3B8yuKrC79esv2msJYsT4Ucwq8WCDXrmFjYQNA5VStxoT7qjCQsuCz9tQJK+CMNvF4MuicqVVHIhKlZ9EkJIHzbaf4/7GdQehjIOfpV+d/YpYsEGb04qHcEKDgdhRavSV6t6+NygW/lwyJU3Z+77Svg0AQrb1Xvu0r/yZVKtd0MNz8mouzZjA06Qj+zSCs9V4EpDoKA00gac9FTmvYGPtKJq379UXpxFEdFF3A/JJ0UWrQYufU1D5C0XQOMg1qjC7L6bkfgmD08W6vqDYBxXIiDiOriLAUTgTNGI4SvdT7yBb+wOrocn/XR9oHxUrgcOkz+QE7Mqm01PCcgJoB4pg0ZnphtbI54Np0UWrxzkRsozHnFI20odHBwzmq2YtYMP4x9t5r6Mwv6bapOUn5l5I5/LVe7lmX4lpWZDO1FzckF5TfRXoPw8I87eUOCWTl01hLFikkuATZ6XfkqhCRN2Wp/WDJJJay1ZZS+svCXS+9oP/oQz0uzbvmfYUyUOGvW0HtlWEHY5J+oy2rSnfQZPxtKYVqPq9WYTl25WOoHOeUcrzoXXg4BEKjKBTxMi0w7JrtXmuJ1FpiUyQahwUYrYZNYW2W29srZBoZEkOwM0it4tJUhFqozZK7tigqORPMWoCR385ogjpkp172cDs77f3Q/8rzu7u7oSiVGXEbxeL90u4583MotqGnrwOuKPXJWKrMYtw7Csqp9bg1ia2RSAu/nuzQuyDmPi5ID8te/GzjcQqbzm/ZwNOeUcjwTmEyF31PSPc55xyjVC4YUvP2S4+M1FyBfaCI7zaHZ+DoQ8JpiDEAeAmJXkDuZzK2bOKQ8zFeOcSfum10z800QkNCUmbK5O3laPesJYsUoGkEjNy9dE/LD3QycEwz7EySFzqJQh9CzVJ6aT4zD0EIQ4gyN0huNbWEInvOmegURgHgejW8bXnd3d3d3d0HJMOUYROB6flnA42dkS5VOIPFqJrDJM4gCU5zPMnwEE3lYC3bWiftbK87u7u7u7oAvucbD+p7IPR7OHlb5UPiHTwfxspyz1rM6ESc01Mpg22Ru5Wmxkgc5DzREUTHW9QSrnWjrzu7u7u7u7oSWDSpANN1oqK6Z/UnRM4tjPQXOxm4rKHRWX5xvk2Fykmq9CVhL5oHGHkSXAh0ltn709JMsadFFq9JXq3turJclzdTsLro07c0zzfxO7U7fOl+KqP10scJsMFBg061PyXBErfzKuwhiG34+S3adOotpBiSRed3d3UNd1WF0SST1ZTmeInV/QahuNJIudEnXbg/lLBBiVKy84207l0O0DhXTiRh5vkjLSBM4lho1pH4AAP7/PssgAA4AAAAAEYAKTOGAAASvBAAdsAckrtsvhM/fQx/ATghz7C84ya++G2A6fDLhOl1f8SooAmi6rY5QbDsgQGlczc1/BJGkS55emUP4NAHq1C+W4tCeHr468DiYLWAADmu4Yd+/N5/uQ1Xu0bg+Zp+5DwxrN76IdC2JP+/YNxmBKTbxUKI4pCVP8AOZwEE8NpOSx1bpg1qi+IgvpfmFJD8RvpPFljCAcrt9/WUDRGFIvbqxiZ3pm4Qsq5gTr28uJbbmZf3Pk19mAUJEJwDvUDKW0zjMU/8Qr/x+W+UnAuxj61p8FZOQZPwzBlpYdm5N2qWmPHJhUDuNcLIyGV4fNlY7M6UM81QeMDRAnHDAmc7Nm+uFc9Hlb7fxhyWuCgETJhSsgqntGPHpWn8yuehaRnZthwxqostMt2+88vnKdn5uqYNl7Lb4vhswzF/fmTTYQX9CmNwNPvA1qcJbKOdP3sD57EMtQwGorlQXQ01gD0g9GFVYz+YPn832tKwlJeGNi7PeBoPldPaLvpKBLJFWH6TeXqFAnW54acLzRxv5pkjVOAKUYQ5jJiEjhFkXLWw9gTKiY76nY0s2DPZVG2+4XhFcmS6T5TaunibaERi6TdDz4cDXJEBPH91wCH23TDrDbdN1IQ2YcnJ7VfntRIL+vrCzSRV2TyPhRUdejyYABEbRbajnJejVnzU0lAI9wM5ApqIXujxQNPVaOwm44JD6svIlUVsEQIEScDsZhbSHU8+sDxJukTA+yZEQAZ7I3c5jjdVG62IMCVKpM+N99qWfyVPGgV9nK6J4ZqhPbKFYecI9VEWLL6QsGVDgc75XjGb7W+1WLkMVh1/aa92rgyeNVbCWZPAt9/hqTMrBIaGKMq0XCIkBp138UdDjjdtsiFUZE0E1m4HWStcNPWEzlzAned8Ij6dIu9mGfc67Igr2G/+JIdAdNUIAhPVHCsglyMl8zmRjO6M5ohgiHXFCRQEYDCFx9+IUqzefBf4HFLZkWBm3jBajDe7X/wcyrBrVuVDE/mWPpkjDBiJhaylzNhD8X7h0jdxPcv4SN6UNmRFbMje2GDqFEvNvWd1VY/d2RpiqZIjbXT97QAjTxRzkTo4IxnNQ9bMkmrUotHaxPLOzC31zlo4ETIH0YgjsU6hLtPMiR9RSWrCMN7ZvkRAVc+2Fgw5gvWuhFrw9/XdbVFxWU4254JOAUq6pfMTsVa/ioD7acdtgOpFgRH6iGyzLAWNDhRy2+leYmVTbQ9f8oGziagCMn9YPkRGEPssrTENGE1e5lM8lwHYe9DLcx1SoBH74IT+1s/9hTdfOAQB3Z9DaNGGrTNqQ5wOOB84JCuSZOu6VBr1L5PqWUY6AuCy5/UB3ljgGt6rj5Sn3H0v3hTYNV5SskQfgL9fU4mKHPAHVmJUVvwGh9nv2QIQzmFU+SICWer0JAKhBfiNpmDQw7vUcAbZih2iityAPvldpx/uficevdPLNe91YYGDxRZdPZLfOQdD5LopyljELfCkrqcFRP1oFVJJflFLQ5bELOZJOcSjsiDacUPhjd60VUFXtuUoVga7oM4EivewIJsQSLm8bLu4cyeb4rgUAqklcDDtxeOC0u6rNtS1lr8+CDeIM0Y1/zcwucrTlmO3ZM65GhngaUiWHBgqmqo51AuVItsf+u6a1xVT7oAtvD2xsznzg9Inq7JeBAR/So0V3/4QvMqT5wulsETHGXQtgeqC11njD0j8ev0j4aajQQH0Mh4MY2U5ncsMjoGI5O9oySoB2s2pVrdZTO/TPP7bHPVtgvnOLMI5yIbuXobUmFPbP8Y5F9PDtvv1fH4gvmkYwAScx+eMjG2uwZrYtldivk/jboOWXYVGT16zqETGD6OUInPrAftFFwHCqOXOpIqjnj9/p88RJphI38gAHgp4rbcMkLUHNEq+mRo5eUUb3bN/kyIOYaAMF7TKUX3Uol5oSTqH3J47SCwiaIy5BxJS6lyc+z+BBNDJ3uiac4jYnUEu1rMQejcvTa1funPuWBZe/V2O/VSm4XANLJ4ZFGlzimSckSZlbleyx6QJbAo0XxemYAlx4G+9yuGe1NuIcvTadWd4KHv2dpv0HdETyieyboJNE2kDQ37dgedisTCF/MJi8WFOTZ2BO6jGN3cNQM/xFGmex67pD2YFzn6td4r9GBwf+8AsO3IVjMLHwLiQquIr26cS9aQyTq9wgHmdhaU8HinwgarPUYElwb9/EmYzeZzzJkZarw7azAM9OICtv76sEH3cP9Hwpsc/LkKL5hPVORU2DNGkF+6XOha3ULFs6Bj6X2KzfuDA5jGozZUEOws1cnkZ43xmJX9tMneJ2cHgMgMmSCbGtC/mD38Duva33cGzubr6QnqJefLxgTZ8YGIGrQ0e8clhqpy4EG3Dhda/LChx5qtYY949c7aK7H7Kh1gWuvDVcW2EAWhbZkoZCBfqU2FlzakLgLitA5NcvNrTemBomlaVOZDUOVdX+rlZG7TaMWUYh1EEmEeRTWgRNEIV6XjleNJPKp6alcnSWx4c/tqlyYm/w25krRUmK80MXcWezOsomK/+F2yPdL1EyLULiz7oLh8LOCWEO7gBlJHRYNqRie+uGb+0cVzvgtq/GlFLwmpcrDeMg64fLuZ1OsLY+ttcIN2IHqWEpnBkG51CrOBUxacZ+WV5GrcDafzBsFnI1+PI0rJk9u6zuTh4+44L2fK6JaYLKhetuZh9ox72Av7lzHaDLdjJ2ISTfArduZIlnp+fVI8Fq6XyyAuLle2OKjQ0T2WuoUqONpkd3OsN+h2KTtj1JJym50Wvjx90KDK8uIWCEP1bCSqoBdy6dca4zB8KYYROjk5rgDVEfjckSfepQB65x+QXEcZTHyUUgjwWILI/GdqFpRa3K72SYxi1RwvPTHPR7Nn8xoJzntm+xpn5W3Kj7v+kSfSLGAzqYTb927z4Nf0X+yoJx8J7/0yp283/pKZeOQOyUXbk9FxPU1Ohv+JcIhM8P6aJaQpz9ESUW0rrBfK5uZqlEIloCfPhHKPpkKZIs/3ERgbjIu2Yk7/G++WuX8howMASIdMGI5Tek+wxDhovlN0u8qDmXpGpP+b/F8H3vpFJwYnX2Vte4CuGNvvr6TuAQydb01Ny3HqupAniB8N32uh0lCT3+RDd0YUCYySbvkh6jbYbQ5vFjBXrZhP7FZdZhNTxpdNVcnyK0kGsTpNHj4cR5ZlpjLV6PsRBLkxbakgetDTvQbV+pLLrsHN/s+BbGQpMy2/I9gx+qpR1SEUV3EHbopgntjOLiMeZWoCTqEU2efa8eDdpd40fLCHZLyRDYN5Zt6bZm4chPQjX+jCu9JAmERGSPUqr8fm2+tX5g9IT4H0l2xW/2ow1QJiqboJSQjplfZGtHwdgovcp8Kb8f9XWsEixtM2ltjIs6RGK+l0Tv/i5bmRGbT7Vv0tWTnaRsk8lFiHEz+VxReS8Nlfp8EgCiPAP3KqEUplBavtelhZKe/F7VV1SGcjv4H/NiU6TfyqAyojXz7EZ5QyQIz2UNezqxdslE2qNLrMjF70jbTHeptXCqgr+pHhX4rYpf3qGaSEG/Ev/6YDu2hGZvxPR8tsa4mOMvQknigEOsIBz+toue4HoUNu2yn3dhX9k7JkEbNroiWiyn6F/xsL0sco32Hgn9tyugPxfhoV2VBoT8Ez9GYYsTBxV/1ovxGoAXOl24mvYeqQQbU1Q750IaET+mYkYKRQG0F4H8UQJs53sFucldzOmhybu3wZAoyBoskEUFBE18fzx3IcGjcGGEqeT4R/PmVXuUdR1h5L2qVXW6DQiuFyoXCQf5F00Mte5O8y7w7uTUWCUrXh+HjkoF1PZziHkhL6M9H4VWr5fwfVOYBfRbZXaOheUyaP1CkJ91H8KZv3Jkd9LlSr7ns5fAsw39wlkyUXpVD8y/KO7iZEVf/NSmXTqDovf4KJVuOHxHeExrKa16oOxbjND92/gDqOKogZvSa05jdI1oTXvLvrU+DKceGCstvLNHOWjV27TarlKoixZYyy32qhVHa3za0aOkcOuxQw+NowHsjM80azJnnY9tMd5XhoCHFPDThKZUr78087JrIZi7nJ6tabXxYQH8viCANHaxjWsG3OyywBb6TLHc4c4TWPo74Qgln2y0qeykA4o9a6bYve6zmwR6b6TlM0lbFqu/8X0NlBL3q4DuK7O6nf4iuL3vyR9g85syyp/fStqYmeSMTfnjSGa6AF6AGqUrKedmdWMtK9rKJgxABLx11BRIoXOst+963njUWomUPiDZ06i8TOw7P9VjQSKGfQXOkzcRwUN1tAZscPxSTJ56JqcHjWOe1B585WVU3BgbQIy5BFOmJKoGvskKzKF6YM+nsKmsv9294RtgPYYGx3j8bFhm93Nmvr/XY3RlSKkxSfNpLkL/aKrNZ9GRq/4ar11iBENZIe10VmztEXrW1q7dsy8TSm+VH4biM8yvo1z79cpx/b7FISjusLnAoaIyxe1piiz47K6oEKXA8eXItpBn5itp+NmayxYjKWhAA+mTkGDE1J3eChxMdOHGiR2gKF4TpfLil3pB2O4+flVoAgADufzNj3JUMOce6a/CSQgLntWYYaBxCF9tGbqf7NseNeyxNUwCrzcphW9SwvBnQlQhgWhAAS7RTHHURFIYhJhW2L7wjBxmEazFlJ9qu7xiy02VQWQomV090zkAhhe+yXw6eVsaqrmMwu5p3s3vt/54s77izddgmZKhDZkjsBI8pXRJNfgWl2lfdsfBERr1NhC48xHOgYvB81d8ew8cxYWCqrO4+pHFW0SJpkSmzXbD9N8wMlHvplG23B+sJDfUXLSUzx+wWdzOMYh+T2MjqAnFHfykOWaH3RqJmJ6ubMq7vrfiOUkPHVy+zEHu3bRotOWL+8tHY6BEhFWaWm+vylIYBeTdJFC6M+fAZ6IVaMPxDgGvQhQsj9xbw3cqp00v4bDELnp3akH8Nv6gectuA4vo3tJtzadWnbIv5P6EB2P31J44jNxO9iXQhwW5UhpgRI9D1eL8zwFqsd3vwfzv9IOo9Ajn4+lsEQ9K4r/guNcYtoXYXnX7gKLo3af2xUNqdPkowaozPDA/G1hkFwLdY5iEXa0nqD9ME9zZw52Z2jhQ1ksHJfVabIjyStseaPMfdhaSP9G48/qudTdxrEC3O3xH8U91oIEjxyL+Qjq1p4WqY0M1ekbnywX8hOfJWnpJ+Sf1ACHswE8geUniZ+r6Ck0l/g79LzKbfUNmPvMLcgHdHBUaDSlrVV8qP56EfdOX/dqCWvOxyyHuLGHif6PRkbnI/rb6dcuVVIH9V4CwNA+H84L1HfRFcfTxsjGUCyrcpHl/JirpWzbyVdg6XM7Sa1xu/cpP7MwAhvrZQXDqWuzmApl4V+PhcIBEQC3umph9XxPyV+Be/puoh9mJePYPWVPeq5DdTRZYBxlKaz36jiW27bL60pirzYsUE44bTpv1jRyo7PvWci7hG/MdARBZ4qJbR7M8fq9czbd2B/DaTHPc++0vKAUaUeNnfRQTFd//FvqEQZlbtKsnAJwvSfD2jluSyERClhg9kVsDS0ZSi0L8PbU2gZ+HlYJwQFjrI0wZkBV1kg9aQF6X8+SUtNtTt2sDFJhPlTUiQmNq9V8X1MU5QrAJc4LTMH3/4DN0ltAQiMY/2c7FEbuBACRRUZx2MHZ56HDDS7g2qBJlvePppDv6bSVlFLkR6GlextKudOmwTgr3voFLGEVs/OGCmHT+lnyDu9Ji6cUxgzSpoNhRQrTTYSRvTTKeaF4TBFKtSLIIUIuh/WIiMrAa0vbBzSnZTI8Mqx+gsh4cb7306YggQ5RkyoHepZH6nDIEAMiX+NAJWNQLrWRBtzKtF3JNrGr3Q6SmiKmMcZFgBCQbd9l9dkANviXtD4qTVS4PDg7jvfuBzLFvUBLveBLkvg//ZfofpfV2oFoF/M9An/jwdQ4477jKcGifstxs7caiIGsgrSczPUakT409A32HWTKCVNzYq1dWLV56yDnJepy/iDgzXzh3J90VXIU8Pc3/VOP8ZbhiC13zAaCmTDPJ87flxTBWSjH5TgIhZ7HEh5sNrbIAiqyMhYknsg/tyRXrJ7eHWlIUXHDma886yyQhPpSYp2g0+F4iTsTfkmZpFDYF9JbT75ey2fDJe2/FHbHjhKyQE1utDfEpd3S92ld1uOLrLaYlBo6jGK2X7teoL7lHQCoJOLGtwkr/ARF/qbLA587eGKD7jHr2XkNJrn7lj45i21vv2IZ81crR6iSfnR5ifYJu5tVg9D9d1Eam4XXYKI+70O2YGtjxXsxIijUCkrQvTDE2UARJdlz2AAOqc8XISbIRA6u0ZHhJU7I3tzWfTO7CC74/XTBBCx7/6JffzU15SUuN2UhDaP75dl6731CpuIWxjZatJmxFGdbRGz+S6fy6tre6Ejxrd8K+jUXgEck5gGLitR8iX0bZmyvDzw/99YmIjzdCddg0z/glBKS5cZTLA4nZPZXzzcL/NWTBBJ/Qu9jB0ANqlu8fJzTUZFbuXAwd/XlbKikZEZZ+xzrWsQ6EJlAKNkeiLCqJTDytg7EPfF2yoLYORcgMOMPLjRZ9NPBNTL+5zwmHTydlN73wOoay+s2NIcSh3Ihpf1+vv2NtcI0xcJL4boWVxXDv3Mov3210KIER1yT+jIaOWmeYexpBbMb2qLkqeS4aIOoDXBO1wc2FRO5g1AwtdLIDwUA2ekqdw8MR9lF9WrqVvB3nRpHE/Rquut9RmkAJnzsyTFWYdD6ZJa4HJjtnuu5DsUifTO0ytfYSgjrAzYewyUpVPluvWtGOKRaTKcNlcsfhd6U/s73LjZLC0XNdidlRMcPBqAM9bsbwSZtdp4tFnOJMsroaYZdxOTRPOf6JQB7htar4Q+4SQ+XZcYEpWc92PC38HhZ6u4LzcDgrLZhcg3Mj6lklBnnF+AoPu+VVLEzV6/E0NQ3eAIsImmY+iGsPDOhOtnJwpF0H/gEfKJ9BQRQ8erigkh7u/H+fvYbL5fm1r0ByvAW905InP08oHxB2TkBbqX60Enx0Sk4yT4COmCr1ETl81C3wUkAtGz/mtztIFWJR0/khlluX815jdQDiMqTzsMyhTGbY1ClxzqqhND4bKzdZcRMskZc5DYQLMbRdtSUWceVHseFpLPdLSL3N6RU0TiqmMJX3FLxspla/OsI9rCVriMIhP68qPJwx0B1V4kMIclyNCroQyWx8OVxFpk40tVeTSPqguun02wHX5H3cV84NE1qQUBPJQeym5l9Nn2pvmFW4YRexOBEkN/sjY/fFhM3jlFnbNVY8v3Ukc7Ru8j4YRivzK6fp7sFWhjqbbt9tN8rhYZ5fiaNGdXTHAFpODPnJDIPhX2RDQPQiRVBYBNQhq4OZRZVrcX89Ef9gC0ZpQiWSX8lv2baDRDQDfbE5DW4FrK/QPTXbrhTLxSEGRTvuJskB2MNLJl+FcPEDcvjrrU8tijoACuB8ugqWf03SAhncFTZL3C8JzfY0KpWaljMeoKGlUzk6nT2wktQD5/43gG0aXx90+6d65vCUQWlvoNKBx962WUX45ie2jLCX6IsN+LwmHStfQ5pZHqqORDhXhW19qC/NQxNWeomnC7v+2InlVMQJBvmOkB/Do/bhsuUywQFnTCdmwbntSFgJ+9UBiJGbTlT5MXCgq/edTRgAGFvMZrww58/WX8h7THMvks5604FRaP8+iC8C5QuRAZTK9ZTAg3IXROLmk1MnH1r4Qd4+kwC7JmFxbfKDyGllESPaG0GfrzTd4LgtLGncXZwpAgfcOZtMG95U5W6/gnuf+xXdzCstmBqZE7ESqZHTfMXCJn1hkMWVwjt3fQ6Rid6epwW38A06mK1gRpwu2lxLem6I6wwRw6fd2ucbI2DD1QU6XlphkwJ6Lz+ka6uOI2E8sQSmVQf84Jt1e94emUXbObpJFTin0yuNwpLLOFv/2v0xx0EutJrVsNBRiZQdGLoDyPhRhpbyse9I5sm8aeXMadOfuHI8+f8RLrdHu2omzYwi889pFOVx5a5J0w/jWRnKF0yDsYSAYSvoKfRdZpIJrH2yn7zMsbB5nV+hd3wzj22roIzGbRJtQMHCY4x2DflUSToNpzA74Ndmi32L2Nu6T8BYKNpVBLed4ofhCJkjw9FsTPRkINb9U3Qo7UN/DatCSklrfjcBZJGC/N5llKkss5pHiBu8BSmQZ67VFXMVt0Elv6B282RtwjfVjqPO7VxVmotu//grpmnTY51tfktFsKDHzXsNbr+cS97O9yYQPYg7Sn+GEzD+WKBHgZpbQZn/BjzzI5l3dA8OIFC16hetvpm8ysnI2iyCFcsGvYgDJH9YbMVHLlbBZ1AbsKEoRreHi4eSTVOag/Trm86Ca+YvDh0+EjjwaLoYpxBzr9asxPijldvHgwqnJ7oScaJV2TIQBQ6j/kgVWD8diitBmwMAm6e1J8DHmetehC1npnR2XkH8kufLSJwLcSvu/Hx3id+P8RXBEvN4wCnL0yR4ieX6MMqGVd6EKqS41GqFItAhw/lZng8pQjKdbqeYYHkYeWi+fKktcsvfCXEZF/JCzeWeYP4097cDT/WGKQAcN+t0JKlE3XV8oXs7MXs54gUOt5UcTIeM6VnLlvhkENc2hutM3QdeX/wi4s0JcQWgStq7ZMqmdBwgwso5OK73L6ProHLI8+FuQwCn+dt3OXHlCyADMOBvrqBqSKZdRbTVx9I1MRVSBbiPSC45ayLEkOSX9QywyyEIujEz472fuWMze45uSipDlPwiLUZmQzeWuMtrJ5lcpMlwEK70bpNRZjc4GUbbrVsoG83nnnVvr39GCNw9xS/ImSR9DJq04LLXsb2qvsYAOcqXAF3w9KhzuWgvmrZbSwaJ0G4gdvMYFhskmaUreynagFdL7oCjYAg9jALFkaI97e3etQmUVIsjr6qgn8QWNzzUorO7LBl9KT8B+t/G9SrdE8C9+tsJJHGhKf7Su2vuTHzOkBAE64kGpBMIGTbzMi3rpZWAup0FUIY9WzsXQ7i21HunXyoBatprjMPIAsqRPlxquqwUQ1uo4KYuckDikPfS/sELk1wn1094W9IBT3ELBPYK5uySrmkS9L8aEYZbAwFrT6G6ecdSxphVxh++mQlQbPN4r2Awb59NuUBpWktZAqjxTpg9AHeBMTdZOlmRYg+dYQKWruPfq2KK62KlGIcBm0OXJ/+brc2+1QsZlu0XEP4vl2415H7msOoYwXyCmbjuqsSmhPX2DCEvzRqRa1acJ5nHUR1B5btSv7fbnfiei5DJpFCP8DwTfygaleA3wcMeODLqKJus79X1R8C7+KWY+k9nbXn/Aa6f1Ssc/o38kADENVL7+Lw1qgP2kx+xjQinv0k9JfrvwfrpzBpIZXhZQq6IkGpwqw8WeA3H1QCGDurULiK7bw5T7LVh+7AegX7oR6HomEPzWEKBT+tDiGg4Xk0BINmv1uMy3qHNIix9uY63H9wkHotOLGZ3lSZhN9/08H9T1nlMZXP/JnEmwxgqjD+aYNrE3ooR5e4yipC14zhTVOClVbrmnY2u1uQFPC9fPQBrfhgwHhRZYL7GwbUCCdaPu3lsgX0K31KCmfC0a7yRFCDdud4nuUn31eISmLaE4NHRN8OMJewR2MHYn3Rm+FgVyduRLqwVs+5jjHN7rzy6NlRmat2swIei6BJ8o9CUc7fK5W3nd3nN0ZU38OswbR8Fmq0Jsqxrh/IksaSYGAba82odL5a/ilCIgWH+jgbvbB+evo/LLsPBYm8XFu97XeAIwlryIf89dm01YQPSLLpI8aJHubSyIFCpkvwtwPW4Kg+8sLckh3g1e3SIlRCvgnqei/VSjVd6GDJF4A9/FcJtV1Illbgf/aJ3HmFuLQOAIXwQpCeGNb0BLgFcJqBKtpIuhVAeIjmK45fvVsVg35h1J73azJZn3NqfloT9A7QsVnlHto68AIAjFDaZXTDXKtPYnpFy4OfA+lYWUdA7VS8MTxaxAAAA" alt="Mohamed Hedi Boukhris" /></div>
-        <code>printf("Passionné par le code, les jeux et l'IA.");</code>
-        <div class="icons">
-          <span>🎮</span><span>&lt;/&gt;</span><span>🧠</span><span>⚡</span>
+      <aside class="hero-panel reveal">
+        <div class="portrait-wrap">
+          <img src="assets/profile.jpg" alt="Photo de Mohamed Hedi Boukhris" />
         </div>
-      </div>
+        <div class="terminal">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <code>printf("Code, jeux vidéo & IA");</code>
+        </div>
+        <div class="quick-tags">
+          <span>C</span><span>Python</span><span>SDL2</span><span>Git</span><span>ESP32</span><span>IA</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="strip">
+      <span>C</span><span>Python</span><span>SDL2</span><span>Game Design</span><span>GitHub</span><span>Linux</span><span>ESP32 BLE</span><span>AI Tools</span>
     </section>
 
     <section id="projects" class="section">
-      <div class="sectionTitle">
-        <p>// Projets</p>
-        <h2>Mes meilleurs projets</h2>
+      <div class="section-head reveal">
+        <p class="eyebrow">// Projets</p>
+        <h2>Projets sélectionnés</h2>
+        <p>Des projets qui montrent mon niveau technique, ma créativité et mon travail en équipe.</p>
       </div>
-      <div class="projects">
-        <article class="card wide">
-          <div class="visual zomi">ZOMI</div>
-          <div class="content">
-            <p class="pill">1ère place Meilleur Jeu — GD3 2026</p>
+
+      <div class="project-grid">
+        <article class="project-card big reveal">
+          <img src="assets/zomi-cover.jpg" alt="Visuel ZOMI" />
+          <div class="project-content">
+            <div class="project-top">
+              <p class="pill">1ère place Meilleur Jeu — GD3 2026</p>
+              <span>2026</span>
+            </div>
             <h3>ZOMI — Jeu vidéo 2D en C/SDL2</h3>
-            <p>Jeu 2D action-platformer avec niveaux, menus, collisions, animations, HUD et boss final. Projet réalisé en équipe avec une manette ESP32 BLE.</p>
+            <p>
+              Jeu 2D action-platformer avec niveaux, menus, collisions, animations, HUD, boss final et manette personnalisée ESP32 BLE.
+            </p>
+            <div class="project-actions">
+              <a href="https://yosritto.github.io/site-Zomi/" target="_blank" rel="noreferrer">Voir le site du jeu →</a>
+            </div>
             <div class="tags"><span>C</span><span>SDL2</span><span>Game Dev</span><span>ESP32</span><span>BLE</span></div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="visual ai">AI</div>
-          <div class="content">
-            <p class="pill">Top 5</p>
+        <article class="project-card reveal">
+          <img src="assets/aiad-cover.jpg" alt="AI AD Awards" />
+          <div class="project-content">
+            <div class="project-top"><p class="pill">Top 5</p><span>2026</span></div>
             <h3>AI AD Awards — Hackathon IA</h3>
-            <p>Participation à un hackathon IA et sélection parmi le Top 5, avec participation à TDS grâce à cette sélection.</p>
-            <div class="tags"><span>IA</span><span>Créativité</span><span>Vidéo</span></div>
+            <p>Participation à un hackathon IA, sélection Top 5 et participation à TDS grâce à cette sélection.</p>
+            <div class="tags"><span>IA</span><span>Vidéo</span><span>Créativité</span><span>Pitch</span></div>
           </div>
         </article>
 
-        <article class="card">
-          <div class="visual py">Py</div>
-          <div class="content">
-            <p class="pill">Dauphine Tunis</p>
+        <article class="project-card reveal">
+          <img src="assets/python-cover.jpg" alt="Hackathon Python Dauphine Tunis" />
+          <div class="project-content">
+            <div class="project-top"><p class="pill">Dauphine Tunis</p><span>2025</span></div>
             <h3>Hackathon Python</h3>
-            <p>Participation en équipe à un hackathon Python organisé à Dauphine Tunis. Développement d'une solution dans un temps limité.</p>
+            <p>Participation en équipe à un hackathon Python organisé à Dauphine Tunis avec développement d’une solution en temps limité.</p>
             <div class="tags"><span>Python</span><span>Algorithme</span><span>Hackathon</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="journey" class="section grid2">
-      <div>
-        <div class="sectionTitle">
-          <p>// Parcours</p>
-          <h2>Expérience & formation</h2>
-        </div>
-        <div class="timeline">
-          <div class="item">
-            <span></span>
-            <h3>ESPRIT — Cycle ingénieur informatique</h3>
-            <p>2025 — Présent</p>
-            <small>1ère année en ingénierie informatique.</small>
-          </div>
-          <div class="item">
-            <span></span>
-            <h3>Baccalauréat français</h3>
-            <p>2025</p>
-            <small>Spécialités : Mathématiques, NSI.</small>
-          </div>
-          <div class="item">
-            <span></span>
-            <h3>Stage — Tunisys</h3>
-            <p>En 3ème</p>
-            <small>Découverte des outils informatiques en entreprise. Participation à des missions techniques.</small>
-          </div>
-          <div class="item">
-            <span></span>
-            <h3>Stage — Digital Virgo</h3>
-            <p>En seconde</p>
-            <small>Découverte d'une entreprise technologique spécialisée dans le digital. Participation à des tâches liées au support et au traitement numérique.</small>
-          </div>
-        </div>
+    <section id="journey" class="section two-cols">
+      <div class="section-head sticky reveal">
+        <p class="eyebrow">// Parcours</p>
+        <h2>Expérience & formation</h2>
+        <p>Un profil jeune, mais déjà orienté projets concrets, stages et compétitions.</p>
       </div>
 
-      <div id="skills">
-        <div class="sectionTitle">
-          <p>// Compétences</p>
-          <h2>Stack technique</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="line-dot"></span>
+          <small>2025 — Présent</small>
+          <h3>ESPRIT — Cycle ingénieur informatique</h3>
+          <p>1ère année en ingénierie informatique : programmation C, algorithmique, structures de données, systèmes, réseaux et SDL2.</p>
         </div>
-        <div class="skillBox">
-          <h3>Développement</h3>
-          <div class="tags"><span>C</span><span>Python</span><span>SDL2</span><span>Git/GitHub</span><span>Linux</span><span>VS Code</span></div>
+        <div class="timeline-item reveal">
+          <span class="line-dot"></span>
+          <small>2025</small>
+          <h3>Baccalauréat français</h3>
+          <p>Spécialités : Mathématiques, NSI.</p>
         </div>
-        <div class="skillBox">
-          <h3>Game Development</h3>
-          <div class="tags"><span>Gameplay 2D</span><span>Niveaux</span><span>Animations</span><span>Collisions</span><span>HUD</span><span>Boss</span></div>
+        <div class="timeline-item reveal">
+          <span class="line-dot"></span>
+          <small>Stage — en 3ème</small>
+          <h3>Tunisys</h3>
+          <p>Découverte des outils informatiques en entreprise. Participation à des missions techniques.</p>
         </div>
-        <div class="skillBox">
-          <h3>IA & outils</h3>
-          <div class="tags"><span>IA générative</span><span>Montage vidéo</span><span>Création de contenu</span><span>Python</span></div>
-        </div>
-        <div class="skillBox">
-          <h3>ESP32 / Hardware</h3>
-          <div class="tags"><span>ESP32</span><span>BLE</span><span>Joystick</span><span>Électronique</span><span>Capteurs</span></div>
+        <div class="timeline-item reveal">
+          <span class="line-dot"></span>
+          <small>Stage — en seconde</small>
+          <h3>Digital Virgo</h3>
+          <p>Découverte d’une entreprise technologique spécialisée dans le digital. Participation à des tâches liées au support et au traitement numérique.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="sectionTitle">
-        <p>// Contact</p>
-        <h2>Disponible pour stage et projets</h2>
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">// Compétences</p>
+        <h2>Stack technique</h2>
       </div>
-      <div class="contactGrid">
-        <a href="mailto:hediboukhris821@gmail.com">hediboukhris821@gmail.com</a>
-        <a href="https://www.linkedin.com/in/hedi-boukhris-05a957390" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="tel:+21650740182">+216 50 740 182</a>
-        <span>Tunis, Tunisie</span>
+
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <span class="icon">⌘</span>
+          <h3>Développement</h3>
+          <p>C, Python, SDL2, Git/GitHub, Linux, VS Code</p>
+        </div>
+        <div class="skill-card reveal">
+          <span class="icon">🎮</span>
+          <h3>Game Development</h3>
+          <p>Gameplay 2D, niveaux, animations, collisions, HUD, boss</p>
+        </div>
+        <div class="skill-card reveal">
+          <span class="icon">🧠</span>
+          <h3>IA & création</h3>
+          <p>IA générative, montage vidéo, création de contenu, pitch</p>
+        </div>
+        <div class="skill-card reveal">
+          <span class="icon">⚡</span>
+          <h3>Hardware</h3>
+          <p>ESP32, BLE, joystick, électronique, capteurs</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
+      <div>
+        <p class="eyebrow">// Contact</p>
+        <h2>Disponible pour stage et projets.</h2>
+        <p>Je cherche à progresser dans le développement logiciel, le game development et les projets IA.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:hediboukhris821@gmail.com"><strong>Email</strong><span>hediboukhris821@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/hedi-boukhris-05a957390" target="_blank" rel="noreferrer"><strong>LinkedIn</strong><span>hedi-boukhris-05a957390</span></a>
+        <a href="tel:+21650740182"><strong>Téléphone</strong><span>+216 50 740 182</span></a>
+        <a href="https://yosritto.github.io/site-Zomi/" target="_blank" rel="noreferrer"><strong>Projet ZOMI</strong><span>Site officiel du jeu</span></a>
       </div>
     </section>
   </main>
 
-  <footer>© 2026 Mohamed Hedi Boukhris — Portfolio personnel</footer>
+  <footer>
+    <p>© 2026 Mohamed Hedi Boukhris</p>
+    <a href="#top">Retour en haut ↑</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
