@@ -440,7 +440,7 @@ h1 span{
 .timeline-item p,
 .skill-card p,
 .contact-grid span{
-  overflow-wrap:anywhere;
+  overflow-wrap:break-word;
 }
 
 footer{
@@ -507,7 +507,7 @@ footer{
 
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .project-card,.reveal{transition:none}
+  .project-card,.skill-card,.timeline-item,.reveal{transition:none}
   .reveal{
     opacity:1;
     transform:none;
